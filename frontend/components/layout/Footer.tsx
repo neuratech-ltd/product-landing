@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Video, MessageSquare } from "lucide-react";
-import logo from "@/assets/logo/logo-6e90a.svg"; 
+import logo from "@/assets/logo/oplogo.svg"; 
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,20 +15,19 @@ const Footer = () => {
           
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
-              <Image src={logo} alt="Beauty Success" className="h-10 w-auto" />
+              <Image src={logo} alt="Neuratech" className="h-10 w-auto" />
               
             </div>
             <p className="text-sm leading-relaxed text-gray-500">
-              Welcome to Beauty Success Online, your trusted destination for authentic 
+              Welcome to Neuratech Product Landing Online, your trusted destination for authentic 
               beauty and cosmetic products. 
             </p>
             <div className="mt-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-gray-900 block mb-2">
+              {/* <span className="text-xs font-bold uppercase tracking-wider text-gray-900 block mb-2">
                 GET APP
-              </span>
+              </span> */}
             </div>
           </div>
-
           
           <div>
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-gray-900">
@@ -70,7 +69,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           
           <div>
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-gray-900">
