@@ -48,7 +48,9 @@
   --radius-4xl: calc(var(--radius) * 2.6);
   --our-primary: #5850ec;
   --our-dark: #0d0b2b;
-  --our-bg: #f0f2fa;
+  --our-bg: #f0f2fa; 
+  --our-bg-hover: #b7c0e7; 
+
 }
 
 :root {

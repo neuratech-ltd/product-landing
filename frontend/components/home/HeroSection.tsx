@@ -23,7 +23,7 @@ const HeroSection = () => {
           </p>
 
           <div className="pt-2">
-            <button className="bg-[var(--our-primary)] hover:bg-[var(--our-dark)] text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-colors">
+            <button className="bg-[var(--our-primary)] hover:bg-[var(--our-bg-hover)] text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-colors">
               Buy Now
             </button>
           </div>   

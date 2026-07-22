@@ -12,7 +12,7 @@ export default function StockCounter({ currentStock = 7, totalStock = 100 }: Sto
   return (
     <div className="w-full max-w-md mx-auto my-6 p-4 rounded-xl bg-[var(--our-bg)] border border-gray-200 shadow-sm">
       <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center gap-2 text-[var(--our-dark)] font-bold text-sm md:text-base">
+        <div className="flex items-center gap-2 text-[var(--our-bg-hover)] font-bold text-sm md:text-base">
           <Flame className="w-5 h-5 text-red-500 animate-pulse" />
           <span>সীমিত স্টক!</span>
         </div> 
@@ -28,7 +28,7 @@ export default function StockCounter({ currentStock = 7, totalStock = 100 }: Sto
         />
       </div>
       <div className="py-4 text-center">
-            <button className="bg-[var(--our-primary)] hover:bg-[var(--our-dark)] text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-colors">
+            <button className="bg-[var(--our-primary)] hover:bg-[var(--our-bg-hover)] text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-colors">
               Buy Now
             </button>
           </div> 
