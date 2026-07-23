@@ -1,12 +1,15 @@
-import React from 'react'
-import { Flame } from 'lucide-react' 
+import React from "react";
+import { Flame } from "lucide-react";
 
 interface StockCounterProps {
   currentStock?: number;
   totalStock?: number;
 }
 
-export default function StockCounter({ currentStock = 7, totalStock = 100 }: StockCounterProps) {
+export default function StockCounter({
+  currentStock = 7,
+  totalStock = 100,
+}: StockCounterProps) {
   const progressPercentage = (currentStock / totalStock) * 100;
 
   return (
@@ -15,23 +18,23 @@ export default function StockCounter({ currentStock = 7, totalStock = 100 }: Sto
         <div className="flex items-center gap-2 text-[var(--our-bg-hover)] font-bold text-sm md:text-base">
           <Flame className="w-5 h-5 text-red-500 animate-pulse" />
           <span>সীমিত স্টক!</span>
-        </div> 
+        </div>
         <span className="text-xs font-semibold bg-red-100 text-red-700 px-2 py-0.5 rounded-full">
           Hurry Up
         </span>
       </div>
 
       <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-        <div 
+        <div
           className="h-full bg-[var(--our-primary)] rounded-full transition-all duration-1000 ease-out animate-pulse"
           style={{ width: `${progressPercentage}%` }}
         />
       </div>
       <div className="py-4 text-center">
-            <button className="bg-[var(--our-primary)] hover:bg-[var(--our-bg-hover)] text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-colors">
-              Buy Now
-            </button>
-          </div> 
+        <button className="bg-[var(--our-primary)] hover:bg-[var(--our-bg-hover)] text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-colors">
+          Buy Now
+        </button>
+      </div>
     </div>
-  )
+  );
 }

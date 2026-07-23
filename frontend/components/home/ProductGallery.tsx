@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import image1 from "@/assets/images/image a.png"
-import image2 from "@/assets/images/image b.png"
-import image3 from "@/assets/images/image c.png"
-import image4 from "@/assets/images/image d.png"
+import image1 from "@/assets/images/image a.png";
+import image2 from "@/assets/images/image b.png";
+import image3 from "@/assets/images/image c.png";
+import image4 from "@/assets/images/image d.png";
 
 export default function ProductGallery() {
   const images = [
@@ -46,7 +46,7 @@ export default function ProductGallery() {
                 নিচের থাম্বনেইলগুলোতে ক্লিক করে প্রোডাক্টটির প্রতিটি অ্যাঙ্গেল
                 এবং নিখুঁত ডিজাইন প্রিভিউ করে দেখুন।
               </p>
-            </div> 
+            </div>
             <div className="grid grid-cols-4 gap-3 w-full">
               {images.map((img) => (
                 <button
@@ -69,6 +69,12 @@ export default function ProductGallery() {
                   </div>
                 </button>
               ))}
+            </div>
+
+            <div className="py-4 text-center">
+              <button className="bg-[var(--our-primary)] hover:bg-[var(--our-bg-hover)] text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-colors">
+                Buy Now
+              </button>
             </div>
           </div>
         </div>
