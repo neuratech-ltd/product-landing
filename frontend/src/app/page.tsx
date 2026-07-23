@@ -1,5 +1,5 @@
 // import CustomerReviews, { CarouselSize } from "@/components/home/CustomerReviews";
-import { CarouselSize } from "@/components/home/CarouselSize";
+import { CustomerRivews } from "@/components/home/CustomerRivews";
 import HeroSection from "@/components/home/HeroSection";
 import HowItWorks from "@/components/home/HowItWorks";
 import ProductGallery from "@/components/home/ProductGallery";
@@ -12,8 +12,7 @@ export default function Home() {
       <HeroSection />
       <StockCounter />
       <HowItWorks />
-      <StockCounter />
-      <CarouselSize />
+      <CustomerRivews/>
       <ProductGallery />
     </div>
   );

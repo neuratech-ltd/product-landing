@@ -47,7 +47,7 @@ export default function ProductGallery() {
                 এবং নিখুঁত ডিজাইন প্রিভিউ করে দেখুন।
               </p>
             </div>
-            <div className="grid grid-cols-4 gap-3 w-full">
+            <div className="grid grid-cols-4 gap-3 w-full mb-5">
               {images.map((img) => (
                 <button
                   key={img.id}
