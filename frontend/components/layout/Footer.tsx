@@ -28,20 +28,6 @@ const Footer = () => {
               </span> */}
             </div>
           </div>
-          
-          {/* <div>
-            <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-gray-900">
-              Quick Link
-            </h3>
-            <ul className="space-y-2.5 text-sm">
-              <li><Link href="#" className="hover:text-pink-600 transition">About us</Link></li>
-              <li><Link href="#" className="hover:text-pink-600 transition">Contact Us</Link></li>
-              <li><Link href="#" className="hover:text-pink-600 transition">How To Order</Link></li>
-              <li><Link href="#" className="hover:text-pink-600 transition">Return & Refund</Link></li>
-              <li><Link href="#" className="hover:text-pink-600 transition">Track Orders</Link></li>
-              <li><Link href="#" className="hover:text-pink-600 transition">FAQ</Link></li>
-            </ul>
-          </div> */}
 
           <div>
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-gray-900">
@@ -69,7 +55,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-gray-900">
               Talk To Us

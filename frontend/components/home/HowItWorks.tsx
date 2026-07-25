@@ -22,7 +22,7 @@ export default function HowItWorks() {
       <div className="container mx-auto px-4 max-w-6xl">
         
         <h2 className="text-2xl md:text-4xl font-black text-center text-gray-900 mb-10 md:mb-16 tracking-wide">
-          Product কীভাবে কাজ করে?
+          Product Details & Benefits
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
