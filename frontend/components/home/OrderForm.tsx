@@ -2,21 +2,19 @@
 import React, { useState } from 'react';
 
 const OrderForm = () => {
-  // Mock product data based on the image
   const [product, setProduct] = useState({
     id: 1,
     name: "MIKEO Fiber XS Prebiotic & Probiotic Supplement",
     price: 1150,
-    image: "https://via.placeholder.com/50", // Replace with your actual product image path
+    image: "https://via.placeholder.com/50", 
     color: "",
     size: ""
   });
 
   const [quantity, setQuantity] = useState(1);
-  const [shippingCharge, setShippingCharge] = useState(0); // Can be changed based on selected delivery area
+  const [shippingCharge, setShippingCharge] = useState(0); 
   const [isSelected, setIsSelected] = useState(true);
 
-  // Form states
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -50,7 +48,6 @@ const OrderForm = () => {
   return (
     <div className="max-w-5xl mx-auto p-6 bg-gray-50 font-sans text-gray-800">
       
-      {/* Header Section */}
       <div className="text-center mb-8">
         <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">
           অর্ডার করতে নিচের ফর্মটি সঠিক ভাবে পূরণ করুন।
@@ -60,10 +57,8 @@ const OrderForm = () => {
         </p>
       </div>
 
-      {/* Main Form Content */}
       <form onSubmit={handleSubmit} className="space-y-6">
         
-        {/* Top Product Select Box */}
         <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm flex items-start gap-4 max-w-xl">
           <input 
             type="checkbox" 
@@ -90,14 +85,13 @@ const OrderForm = () => {
           </div>
         </div>
 
-        {/* Layout Grid: Billing Details vs Order Summary */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
-          {/* Left Side: Billing Details */}
           <div className="lg:col-span-7 space-y-4">
             <h2 className="text-xl font-bold border-b pb-2 text-gray-900">বিলিং বিবরণ</h2>
             
-            {/* Name Input */}
+           
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1">
                 আপনার নাম লিখুন <span className="text-red-500">*</span>
@@ -112,7 +106,6 @@ const OrderForm = () => {
               />
             </div>
 
-            {/* Mobile Input */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1">
                 মোবাইল নাম্বার <span className="text-red-500">*</span>
@@ -127,7 +120,6 @@ const OrderForm = () => {
               />
             </div>
 
-            {/* Address Input */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1">
                 আপনার ঠিকানা <span className="text-red-500">*</span>
@@ -142,7 +134,6 @@ const OrderForm = () => {
               />
             </div>
 
-            {/* Delivery Area Dropdown */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1">
                 ডেলিভারি এলাকা <span className="text-red-500">*</span>
@@ -153,7 +144,6 @@ const OrderForm = () => {
                 value={formData.deliveryArea}
                 onChange={(e) => {
                   handleInputChange(e);
-                  // Update shipping charge dynamically if needed
                   if (e.target.value === 'inside') setShippingCharge(60);
                   if (e.target.value === 'outside') setShippingCharge(120);
                 }}
@@ -166,11 +156,9 @@ const OrderForm = () => {
             </div>
           </div>
 
-          {/* Right Side: Order Summary */}
           <div className="lg:col-span-5 bg-white border border-gray-200 rounded-lg p-5 shadow-sm space-y-4">
             <h2 className="text-lg font-bold text-gray-900">আপনার অর্ডার আইটেম</h2>
             
-            {/* Selected Product Card */}
             {isSelected ? (
               <div className="border border-gray-100 p-3 rounded-lg flex items-center justify-between gap-3 bg-gray-50">
                 <div className="flex items-center gap-3">
@@ -200,8 +188,7 @@ const OrderForm = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="flex flex-col items-end gap-2">
+                {/* <div className="flex flex-col items-end gap-2">
                   <span className="font-semibold text-sm text-gray-700">৳{product.price}</span>
                   <button 
                     type="button"
@@ -210,13 +197,12 @@ const OrderForm = () => {
                   >
                     Remove
                   </button>
-                </div>
+                </div> */}
               </div>
             ) : (
               <p className="text-sm text-gray-500 italic py-2">কোনো আইটেম সিলেক্ট করা নেই।</p>
             )}
 
-            {/* Calculations Area */}
             <div className="pt-2 space-y-3 text-sm">
               <div className="flex justify-between text-gray-600 font-medium">
                 <span>Subtotal:</span>
@@ -235,7 +221,6 @@ const OrderForm = () => {
               </div>
             </div>
 
-            {/* Submit Button */}
             <button 
               type="submit"
               className="w-full bg-[#dc2626] text-white font-bold py-3.5 rounded-md hover:bg-red-700 transition-colors text-center text-base mt-4 shadow-sm"
