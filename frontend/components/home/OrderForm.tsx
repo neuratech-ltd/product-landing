@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from 'react';
+import image1 from "@/assets/images/image a.png";
+
 
 const OrderForm = () => {
   const [product, setProduct] = useState({
     id: 1,
     name: "MIKEO Fiber XS Prebiotic & Probiotic Supplement",
     price: 1150,
-    image: "https://via.placeholder.com/50", 
+    image: image1.src,
     color: "",
     size: ""
   });

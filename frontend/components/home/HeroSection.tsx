@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../../assets/images/product banner.webp";
 
+
 const HeroSection = () => {
   return (
     <section

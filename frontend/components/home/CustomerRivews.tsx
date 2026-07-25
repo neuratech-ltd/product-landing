@@ -18,7 +18,7 @@ export function CustomerRivews() {
       id: 1,
       name: "জাহিদুল ইসলাম",
       role: "Verified Buyer",
-      image: profileimg1, 
+      image: profileimg1.src, 
       comment: "প্রোডাক্টের কোয়ালিটি অসাধারণ! ডেলিভারিও খুব ফাস্ট পেয়েছি। নেক্সটে আবার অর্ডার করার ইচ্ছা আছে।",
       rating: 5
     },
@@ -26,7 +26,7 @@ export function CustomerRivews() {
       id: 2,
       name: "নাসরিন আক্তার",
       role: "Premium User",
-      image: "/p2.png",
+      image: profileimg1.src,
       comment: "বিল্ড কোয়ালিটি প্রিমিয়াম এবং সাউন্ড একদম ক্রিস্টাল ক্লিয়ার। প্রাইস অনুযায়ী বেস্ট চয়েস নিঃসন্দেহে।",
       rating: 5
     },
@@ -34,16 +34,16 @@ export function CustomerRivews() {
       id: 3,
       name: "তানভীর আহমেদ",
       role: "Tech Enthusiast",
-      image: "/p3.png",
-      comment: "খুবই কমফোর্টেবল। দীর্ঘক্ষণ ব্যবহার করলেও কানে কোনো সমস্যা হয় না। কাস্টমার সাপোর্ট টিম বেশ হেল্পফুল ছিল।",
+      image: profileimg1.src,
+      comment: "খুবই কমফোর্টেবল। দীর্ঘক্ষণ ব্যবহার করলেও কানে কোনো সমস্যা হয় না। কাস্টমার সাপোর্ট টিম বেশ হেল্পফুল ছিল।",
       rating: 4
     },
     {
       id: 4,
       name: "রাফসান সানি",
       role: "Regular Customer",
-      image: "/p4.png",
-      comment: "লুকিং অনেক জোস! ম্যাট ফিনিশিংটা প্রিমিয়াম ভাইব দেয়। ফ্রেন্ডদেরও রিকমেন্ড করেছি এটা নেওয়ার জন্য।",
+      image: profileimg1.src,
+      comment: "লুকিং অনেক জোস! ম্যাট ফিনিশিংটা প্রিমিয়াম ভাইব দেয়। ফ্রেন্ডদেরও রিকমেন্ড করেছি এটা নেওয়ার জন্য।",
       rating: 5
     }
   ];
