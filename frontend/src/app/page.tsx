@@ -2,6 +2,7 @@
 import { CustomerRivews } from "@/components/home/CustomerRivews";
 import HeroSection from "@/components/home/HeroSection";
 import HowItWorks from "@/components/home/HowItWorks";
+import OrderForm from "@/components/home/OrderForm";
 import ProductGallery from "@/components/home/ProductGallery";
 import StockCounter from "@/components/home/StockCounter";
 import Image from "next/image";
@@ -14,6 +15,7 @@ export default function Home() {
       <HowItWorks />
       <CustomerRivews/>
       <ProductGallery />
+      <OrderForm/>
     </div>
   );
 }
