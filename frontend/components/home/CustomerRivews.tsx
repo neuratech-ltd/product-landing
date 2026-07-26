@@ -16,7 +16,7 @@ export function CustomerRivews() {
   const reviewsData = [
     {
       id: 1,
-      name: "জাহিদুল ইসলাম",
+      name: "Jahidul Islam",
       role: "Verified Buyer",
       image: profileimg1.src, 
       comment: "প্রোডাক্টের কোয়ালিটি অসাধারণ! ডেলিভারিও খুব ফাস্ট পেয়েছি। নেক্সটে আবার অর্ডার করার ইচ্ছা আছে।",
@@ -24,7 +24,7 @@ export function CustomerRivews() {
     },
     {
       id: 2,
-      name: "নাসরিন আক্তার",
+      name: "Kamal Hossain",
       role: "Premium User",
       image: profileimg1.src,
       comment: "বিল্ড কোয়ালিটি প্রিমিয়াম এবং সাউন্ড একদম ক্রিস্টাল ক্লিয়ার। প্রাইস অনুযায়ী বেস্ট চয়েস নিঃসন্দেহে।",
@@ -32,7 +32,7 @@ export function CustomerRivews() {
     },
     {
       id: 3,
-      name: "তানভীর আহমেদ",
+      name: "Tanvir Ahmed",
       role: "Tech Enthusiast",
       image: profileimg1.src,
       comment: "খুবই কমফোর্টেবল। দীর্ঘক্ষণ ব্যবহার করলেও কানে কোনো সমস্যা হয় না। কাস্টমার সাপোর্ট টিম বেশ হেল্পফুল ছিল।",
@@ -40,7 +40,7 @@ export function CustomerRivews() {
     },
     {
       id: 4,
-      name: "রাফসান সানি",
+      name: "Rafsan Sanee",
       role: "Regular Customer",
       image: profileimg1.src,
       comment: "লুকিং অনেক জোস! ম্যাট ফিনিশিংটা প্রিমিয়াম ভাইব দেয়। ফ্রেন্ডদেরও রিকমেন্ড করেছি এটা নেওয়ার জন্য।",
@@ -79,7 +79,6 @@ export function CustomerRivews() {
                         }}
                       />
                     </div>
-
                     
                     <div className="flex gap-1 mb-2">
                       {Array.from({ length: review.rating }).map((_, i) => (
