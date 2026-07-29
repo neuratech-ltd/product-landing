@@ -16,7 +16,6 @@ const Header = () => {
           <li>
             <Button size="sm"> <span><i className="bi bi-person"></i> Login</span></Button>
           </li>
-         
         </ul>
       </nav>
     </header>
