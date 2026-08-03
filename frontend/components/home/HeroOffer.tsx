@@ -1,6 +1,5 @@
 import { ShieldCheck, Lock, MessageCircle } from "lucide-react";
 import CountdownTimer from "@/components/home/CountdownTimer";
-import HeroImg from "@/assets/images/image a.png";
 import HeroImg2 from "@/assets/images/landing-image.webp" ;
 
 export default function HeroOffer() {
