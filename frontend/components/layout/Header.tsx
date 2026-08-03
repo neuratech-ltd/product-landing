@@ -1,23 +1,23 @@
 "use client";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo/oplogo.svg";
+import { Phone } from "lucide-react";
 
 
 
 const Header = () => {
   return (
-    <header
-      className={cn("sticky top-0 z-50 w-full border-transparent border-b shawdow-sm backdrop-blur-md")}
-    >
-      <nav className="mx-auto flex h-18  w-full max-w-5xl items-center justify-between px-4">
-        <img src={logo.src} alt="Logo" className="h-50 w-50" />
-        <ul className="flex items-center gap-2 ">          
-          <li>
-            <Button size="sm"> <span><i className="bi bi-person"></i> Login</span></Button>
-          </li>
-        </ul>
-      </nav>
+    <header className="w-full bg-white sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+        <h1 className="text-3xl font-extrabold tracking-tight">
+          Sound<span className="text-green-600">Max</span>
+        </h1>
+        <a
+          href="tel:0161234567"
+          className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-green-600"
+        >
+          <Phone size={16} />
+          <span>0161234567</span>
+        </a>
+      </div>
     </header>
   );
 };

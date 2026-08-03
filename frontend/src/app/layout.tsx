@@ -2,7 +2,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import logo from "./favicon.ico";
 import { cn } from "@/lib/utils";
-// import Header from "@/components/layout/Header";
+import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       )}
     >
       <body className="min-h-full flex flex-col">
-        {/* <Header /> */}
+        <Header />
         {children}
         <Footer />
       </body>
