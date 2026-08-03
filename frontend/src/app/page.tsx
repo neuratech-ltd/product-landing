@@ -1,5 +1,6 @@
 // import CustomerReviews, { CarouselSize } from "@/components/home/CustomerReviews";
 import { CustomerRivews } from "@/components/home/CustomerRivews";
+import GalleryVideo from "@/components/home/GalleryVideo";
 import HeroOffer from "@/components/home/HeroOffer";
 import HeroSection from "@/components/home/HeroSection";
 import HowItWorks from "@/components/home/HowItWorks";
@@ -17,8 +18,9 @@ export default function Home() {
       {/* <HeroSection /> */}
       {/* <StockCounter /> */}
       {/* <HowItWorks /> */}
+      <GalleryVideo />
       <CustomerRivews/>
-      <ProductGallery />
+      {/* <ProductGallery /> */}
       <OrderForm/>
     </div>
   );

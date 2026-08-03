@@ -46,11 +46,10 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-  --our-primary: #5850ec;
+  --our-primary: #008000;
   --our-dark: #0d0b2b;
   --our-bg: #f0f2fa; 
   --our-bg-hover: #b7c0e7; 
-
 }
 
 :root {

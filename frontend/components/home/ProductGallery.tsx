@@ -22,7 +22,7 @@ export default function ProductGallery() {
       <div className="container mx-auto px-4 max-w-5xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 w-full">
-            <div className="relative w-full aspect-[4/3] md:aspect-square max-h-[500px] rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm flex items-center justify-center">
+            <div className="relative w-full aspect-[4/3] md:aspect-square max-h-125 rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm flex items-center justify-center">
               <Image
                 src={activeImage.src}
                 alt={activeImage.alt}

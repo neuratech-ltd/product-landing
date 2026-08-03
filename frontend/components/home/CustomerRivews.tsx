@@ -65,10 +65,8 @@ export function CustomerRivews() {
             >
               <div className="p-2 h-full">
                 <Card className="h-full border-gray-100 shadow-sm rounded-2xl bg-white hover:shadow-md transition-shadow duration-300">
-                  <CardContent className="flex flex-col items-center justify-between p-6 h-full min-h-[380px]">
-                    
-                   
-                    <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-100 bg-gray-50 relative mb-2 flex-shrink-0">
+                  <CardContent className="flex flex-col items-center justify-between p-6 h-full min-h-95">
+                    <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-100 bg-gray-50 relative mb-2 shrink-0">
                       <img
                         src={review.image}
                         alt={review.name}
