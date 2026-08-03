@@ -73,7 +73,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-800 text-center text-xs text-gray-500 py-4">
-        ©2026 SoundMax. All rights reserved.
+        ©{new Date().getFullYear()} SoundMax. All rights reserved.
       </div>
     </footer>
   );
