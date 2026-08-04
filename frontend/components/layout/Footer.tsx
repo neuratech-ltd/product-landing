@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300 mt-10">
       <div className="max-w-6xl mx-auto px-4 py-10 flex gap-8 justify-between">
         <div>
-          <h2 className="text-xl font-extrabold text-white mb-3">
+          <h2 className="text-3xl font-extrabold text-white mb-3">
             Sound<span className="text-green-500">Max</span>
           </h2>
           <div className="flex gap-3">
