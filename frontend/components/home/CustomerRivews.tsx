@@ -63,10 +63,10 @@ export function CustomerRivews() {
               key={review.id}
               className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
             >
-              <div className="p-2 h-full">
-                <Card className="h-full border-gray-100 shadow-sm rounded-2xl bg-white hover:shadow-md transition-shadow duration-300">
+              <div className="p-2 h-full py-4">
+                <Card className="h-full border-gray-100 rounded-2xl bg-white hover:shadow-md transition-shadow duration-300 shadow-lg">
                   <CardContent className="flex flex-col items-center justify-between p-6 h-full min-h-95">
-                    <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-100 bg-gray-50 relative mb-2 shrink-0">
+                    <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-100 bg-gray-50 relative mb-2 shrink-0"> 
                       <img
                         src={review.image}
                         alt={review.name}

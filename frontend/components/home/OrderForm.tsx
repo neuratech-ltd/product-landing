@@ -213,8 +213,7 @@ const OrderForm = () => {
               <div className="flex justify-between text-gray-600 font-medium">
                 <span>Shipping Charge:</span>
                 <span>৳{shippingCharge.toFixed(2)}</span>
-              </div>
-              
+              </div>           
               <div className="flex justify-between items-center pt-3 border-t border-gray-200">
                 <span className="text-xl font-bold text-gray-900">Total:</span>
                 <span className="bg-[#0f172a] text-white text-lg font-bold px-4 py-1.5 rounded">
@@ -222,7 +221,6 @@ const OrderForm = () => {
                 </span>
               </div>
             </div>
-
             <button 
               type="submit"
               className="w-full bg-[#dc2626] text-white font-bold py-3.5 rounded-md hover:bg-red-700 transition-colors text-center text-base mt-4 shadow-sm"
