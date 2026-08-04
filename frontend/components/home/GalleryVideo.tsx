@@ -19,8 +19,8 @@ export default function GalleryVideo({
   youtubeUrl = "#",
 }: Props) {
   return (
-    <section className="max-w-6xl mx-auto px-4 mt-6">
-      <div className="bg-white border rounded-2xl p-6 md:p-8">
+    <section className="w-full max-w-7xl mx-auto px-4 mt-6">
+      <div className="bg-white border rounded-2xl p-6 md:p-8 shadow-lg">
         <h3 className="flex items-center gap-2 text-lg font-bold text-gray-900 mb-4">
           <Images size={18} className="text-green-600" />
           পণ্য গ্যালারি ও ভিডিও

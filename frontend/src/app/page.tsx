@@ -1,5 +1,6 @@
 // import CustomerReviews, { CarouselSize } from "@/components/home/CustomerReviews";
 import { CustomerRivews } from "@/components/home/CustomerRivews";
+import FaqWhyUs from "@/components/home/FaqWhyUs";
 import FeaturesSpecs from "@/components/home/FeaturesSpecs";
 import GalleryVideo from "@/components/home/GalleryVideo";
 import HeroOffer from "@/components/home/HeroOffer";
@@ -22,6 +23,7 @@ export default function Home() {
       <GalleryVideo />
       <FeaturesSpecs />
       <CustomerRivews/>
+      <FaqWhyUs />
       {/* <ProductGallery /> */}
       {/* <OrderForm/> */}
     </div>
